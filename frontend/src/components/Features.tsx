@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, type DragEvent, type ChangeEvent } from 'react'
+import { api } from '../config'
 import '../styles/Features.css'
 
 export function Features() {
@@ -38,7 +39,7 @@ export function Features() {
 
   async function checkModelStatus() {
     try {
-      const res = await fetch('/api/model/status')
+      const res = await fetch(api('/api/model/status'))
       const data = await res.json()
       setModelExists(data.model_exists)
     } catch {
@@ -96,7 +97,7 @@ export function Features() {
     formData.append('volume_final', volumeFinal.toString())
 
     try {
-      const response = await fetch('/api/predict', {
+      const response = await fetch(api('/api/predict'), {
         method: 'POST',
         body: formData,
       })

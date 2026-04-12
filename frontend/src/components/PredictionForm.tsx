@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { api } from '../config';
 import '../styles/PredictionForm.css';
 
 export function PredictionForm() {
@@ -30,7 +31,7 @@ export function PredictionForm() {
     formData.append('volume_final', volumeFinal.toString());
 
     try {
-      const response = await fetch('/api/predict', {
+      const response = await fetch(api('/api/predict'), {
         method: 'POST',
         body: formData,
       });
