@@ -1,0 +1,47 @@
+.hero {
+  padding: 2vh 0 1vh;
+  text-align: center;
+  background: transparent;
+}
+
+.hero__container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  font-weight: 1000;
+  letter-spacing: -0.05em;
+  margin-bottom: 0.5rem;
+  color: var(--color-accent);
+  line-height: 0.95;
+}
+
+.hero__title-accent {
+  color: var(--color-primary);
+}
+
+.hero__media {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vh 0;
+}
+
+.hero__atom {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  clip-path: circle(50%); /* Robust circular clip of the checkerboard */
+}
+
+.hero__subtitle {
+  font-size: 1.35rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+  max-width: 550px;
+  margin: 0 auto;
+  font-weight: 600;
+}
