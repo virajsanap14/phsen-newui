@@ -151,6 +151,14 @@ export function Features() {
       <div className="features__container">
         <h2 className="features__title">Phosphorus Prediction</h2>
 
+        <div className="workflow-instructions">
+          <ol className="instruction-list">
+            <li><strong>Upload:</strong> Upload your raw Nix CSV file from the colorimeter.</li>
+            <li><strong>Configure:</strong> Adjust sample mass and volume parameters as needed.</li>
+            <li><strong>Predict:</strong> Click "Run Prediction" to get phosphorus concentration results.</li>
+          </ol>
+        </div>
+
         {/* Model status banner */}
         {modelExists === false && (
           <div className="model-warning">
