@@ -1,5 +1,5 @@
 .features {
-  padding: 1.5vh 0 3vh;
+  padding: 0.5vh 0 1vh;
   background: transparent;
 }
 
@@ -9,9 +9,9 @@
 }
 
 .features__title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 900;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.15rem;
   color: var(--color-text);
   letter-spacing: -0.04em;
 }
@@ -27,10 +27,10 @@
 .upload-zone {
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
+  padding: 1.5rem 2rem;
   text-align: center;
   cursor: pointer;
-  margin-bottom: 2.5vh;
+  margin-bottom: 1vh;
   background: var(--glass-bg);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -85,9 +85,9 @@
 .workflow-instructions {
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 1.5rem 2rem;
+  padding: 0.75rem 1.5rem;
   border-radius: var(--radius-md);
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
   box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,0.1));
 }
 
@@ -95,12 +95,12 @@
   margin: 0;
   padding-left: 1.5rem;
   color: var(--color-text-secondary);
-  line-height: 1.8;
-  font-size: 0.95rem;
+  line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 .instruction-list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.15rem;
 }
 
 .instruction-list li:last-child {

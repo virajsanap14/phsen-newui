@@ -20,7 +20,7 @@ export function Navbar() {
         </a>
 
         <nav className="navbar__links">
-          <a href="/train" onClick={(e) => navigate(e, '/train')}>Train</a>
+          <a href="/train" onClick={(e) => navigate(e, '/train')}>Train Your Model</a>
           <a href="/about" onClick={(e) => navigate(e, '/about')}>About</a>
         </nav>
 
@@ -35,7 +35,7 @@ export function Navbar() {
 
       {menuOpen && (
         <nav className="navbar__mobile">
-          <a href="/train" onClick={(e) => { navigate(e, '/train'); setMenuOpen(false) }}>Train</a>
+          <a href="/train" onClick={(e) => { navigate(e, '/train'); setMenuOpen(false) }}>Train Your Model</a>
           <a href="/about" onClick={(e) => { navigate(e, '/about'); setMenuOpen(false) }}>About</a>
         </nav>
       )}
